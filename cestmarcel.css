@@ -84,9 +84,9 @@ p, a {
   justify-content: flex-start;
   background-image: url(header.jpg);
   background-position: bottom;
-  background-size: cover;
+  background-size: 1400px;
   background-repeat: no-repeat;
-  background-color: #C0D6DF;
+  background-color: #2C4251;
   height: 300px;
   color: white;
 }
