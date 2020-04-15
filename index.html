@@ -3,7 +3,7 @@
 <head>
 <title>Marcel Thiemann</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="cestmarcel.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
@@ -13,11 +13,12 @@
 
 <!-- Navigation -->
 
-<div class="navbar">
+<div class="navbar" id="myNavbar">
   <div class="content">
     <span class="name">MARCEL THIEMANN</span>
     <a href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">Connect on LinkedIn</a>
     <a href="#contact_area" class="right">Contact me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 </div>
 
@@ -33,7 +34,8 @@
 
 <!-- Detail overview -->
 
-<div class="section-head content">
+<div class="content">
+<div class="section-head">
     <h2>GET TO KNOW ME</h2>
     <div class="detail-row">
     <div class="detail-column">
@@ -58,6 +60,7 @@
       <button type="button" class="collapsible" id="detail3">Learn more</button>
     </div>
   </div>
+</div>
 </div>
 
 <!-- Detail collapsibles -->
@@ -106,11 +109,13 @@
 
 <!-- Logo Bar -->
 
-<div class="section-head content">
+<div class="content">
+<div class="section-head">
     <h2>BRANDS I'VE WORKED WITH</h2>
 </div>
+</div>
 
-<div class="logo-row">
+<div class="logo-row content">
   <div class="logo-column">
     <img src="logos/sap.jpg" alt="SAP logo" style="width:80%">
   </div>
