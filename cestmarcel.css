@@ -278,13 +278,13 @@ p, a {
   .navbar a:not(:first-child) {
       display: none;
     }
-  .navbar a.icon {
-    float: right;
+  .navbar a.icon, .navbar.responsive a.icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
     display: block;
     }
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
+  .navbar.responsive {position: relative;} {
     right: 0;
     top: 0;
   }
