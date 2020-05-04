@@ -66,6 +66,14 @@ p, a {
   float: right;
 }
 
+.language {
+  float: right;
+}
+
+a.language {
+  float: right;
+}
+
 .navbar a.right {
   float: right;
 }
