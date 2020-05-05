@@ -421,11 +421,17 @@ button:hover, button.active {
   align-items: center;
   display: flex;
   padding: 0 50px;
-  max-width: 200px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
 .icon-column {
-  flex: 33.33%;
+  flex: 20%;
   padding: 15px;
+}
+
+.footer-head {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2C4251;
 }
