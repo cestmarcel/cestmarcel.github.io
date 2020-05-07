@@ -371,6 +371,10 @@ button:hover, button.active {
   margin-top: 20px;
 }
 
+.mini-head {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .logo-column {
     flex: 25%;
@@ -452,5 +456,11 @@ button:hover, button.active {
   }
   .icon-row {
     padding: 0 20px;
+  }
+  .mini-head {
+    display: none;
+  }
+  .mini-logos {
+    display: none;
   }
 }
