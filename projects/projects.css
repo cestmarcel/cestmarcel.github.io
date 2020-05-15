@@ -1,0 +1,211 @@
+.projects-header {
+    padding: 80px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(img/projects-header.jpg);
+    background-position: bottom;
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-color: #2C4251;
+    height: 150px;
+    color: white;
+  }
+  
+  .projects-header h1 {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .projects-header p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    width: 45%;
+  }
+
+.project-row {
+    display: flex;
+}
+
+.project-row h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-row h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-row p {
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 40%;
+}
+
+.project-copy {
+    width: 60%;
+    align-items: center;
+}
+
+.marcel-thiemann {
+    background-image: url(img/marcelthiemann-project-header.jpg);
+}
+
+.fitnrisju {
+    background-image: url(img/fitnrisju-project-header.jpg);
+}
+
+.project-description h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.project-description h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2C4251;
+}
+
+.project-description h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.project-description p {
+    font-size: 16px;
+    
+}
+
+.description-end {
+    margin-bottom: 70px;
+}
+
+.project-button {
+    margin: 40px 10px 0 0;
+    background-color: #2C4251;
+    border-color: #2C4251;
+}
+
+.project-button:hover {
+    background-color: #FF784F;
+    border-color: #FF784F;
+}
+
+.orange-line {
+    background-color: #FF784F;
+    height: 3px;
+    width: 100%;
+}
+
+.project-selector .detail-column {
+    padding: 5px;
+}
+
+.project-selector h3 {
+    font-weight: bold;
+}
+
+
+.project-coming-soon {
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-color: #2C4251;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FF784F;
+}
+
+.project-coming-soon h3 {
+    color: #2C4251;
+}
+
+.placeholder {
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-img-1 {
+    background-image: url(img/project-button-marcelthiemann.jpg);
+}
+
+.project-img-2 {
+    background-image: url(img/project-button-fitnrisju.jpg);
+}
+
+a.project-overview-link {
+    color: #FF784F;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.project-button-2 {
+    background-color: #2C4251;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #2C4251;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-button-bar {
+    margin: 30px 5px 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+.projects-header {
+    background-size: 800px;
+    padding: 20px 0;
+  }
+  .projects-header h1 {
+    font-size: 25px;
+  }
+  .projects-header p {
+    font-size: 15px;
+}
+.placeholder {
+    display: none;
+}
+}
