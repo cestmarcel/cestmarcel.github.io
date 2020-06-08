@@ -9,7 +9,7 @@
     background-size: 1600px;
     background-repeat: no-repeat;
     background-color: #2C4251;
-    height: 150px;
+    height: 300px;
     color: white;
   }
   
@@ -64,6 +64,14 @@
 
 .fitnrisju {
     background-image: url(img/fitnrisju-project-header.jpg);
+}
+
+.ecoroute {
+    background-image: url(img/ecoroute-project-header.jpg);
+}
+
+sub {
+    font-size: x-small;
 }
 
 .project-description h2 {
@@ -194,9 +202,24 @@ a.project-overview-link {
     margin: 30px 5px 10px 0;
 }
 
+.card a {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card {
+    border: 1px solid lightgray;
+}
+
+@media screen and (max-width: 850px) {
+    .projects-header p {
+        width: 65%;
+    }
+}
+
 @media screen and (max-width: 600px) {
 .projects-header {
-    background-size: 800px;
+    height: 200px;
+    background-size: 1000px;
     padding: 20px 0;
   }
   .projects-header h1 {

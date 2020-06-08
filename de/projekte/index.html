@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92914643-2"></script>
@@ -14,62 +14,112 @@
 <title>Marcel Thiemann</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../../reset.css">
 <link rel="stylesheet" href="../../cestmarcel.css">
 <link rel="stylesheet" href="../../projects/projects.css">
-<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body> 
 
-<!-- Navigation -->
-
-<div class="navbar" id="myNavbar">
-    <div class="content">
-      <div class="header-name"><a href="../../"><span class="name">MARCEL THIEMANN</span></a></div>
-      <a href="./" class="right"><img src="../../icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-      <a href="../../projects" class="right"><img src="../../icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-      <a href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">LinkedIn</a>
-      <a href="../../index.html#contact_area" class="right">Kontakt</a>
-      <a href="./" class="right">Projekte</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="../">MARCEL THIEMANN</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../projekte/" class="right">Projekte</a>
+          <a class="nav-item nav-link" href="../index.html#contact_area" class="right">Kontakt</a>
+          <a class="nav-item nav-link" href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">LinkedIn</a>
+          <a class="nav-item nav-link" href="../../projects" class="right"><img src="../../icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
+          <a class="nav-item nav-link" href="../projekte/" class="right"><img src="../../icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
+        </div>
+      </div>
     </div>
-  </div>
+  </nav>
 
 
 <!-- Header -->
 
-  <div class="projects-header">
-    <div class="content medium-stage">
-      <h1>PROJEKTE</h1>
-      <p>Erfahren Sie mehr über meine bisherigen Projekte. Kontaktieren Sie mich gern bei Fragen!</p>
-    </div>
+<div class="projects-header">
+  <div class="container">
+    <h1>MEINE PROJEKTE</h1>
+    <p>Erfahren Sie mehr über meine bisherigen Projekte. Kontaktieren Sie mich bei Fragen gerne!</p>
   </div>
+</div>
 
-
-<!-- Project selector -->
-
-<div class="description-end"></div>
-<div class="content project-selector">
-        <div class="detail-row">
-            <a class="detail-column" href="./marcelthiemann.html">
-            <div class="detail-image project-img-1">
-              <h3>Persönliche<br>Webseite</h3>
-            </div>
-        </a>
-        <a class="detail-column" href="./fitnrisju.html">
-          <div class="detail-image project-img-2">
-            <h3>fit.n.risju<br>Webseite & CMS</h3>
-          </div>
-        </a>
-        <a class="detail-column">
-          <div class="project-coming-soon">
-            <h3>Mehr kommt<br>bald!</h3>
-          </div>
-        </a>
+<!-- Featured projects -->
+<div class="container">
+<h2 class="mb-4">PROJEKT-HIGHLIGHTS</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 100%;">
+      <img src="../../projects/img/ecoroute.jpg" class="card-img-top" alt="Personal website">
+      <div class="card-body">
+        <h5 class="card-title">EcoRoute</h5>
+        <p class="card-text">Ein Routenplaner, der die CO<sub>2</sub>-Emissionen der gewählten Route berechnet.</p>
+        <a href="./ecoroute.html" class="btn btn-primary mt-3">Mehr erfahren</a>
       </div>
     </div>
+  </div>
+  <!-- <div class="col-sm-6">
+    <div class="card" style="width: 100%;">
+      <img src="../../projects/img/wfh.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Work-From-Home Toolkit</h5>
+        <p class="card-text">Mit der Hilfe meines Netzwerks habe ich einen Online-Leitfaden für Neulinge in der Heimarbeit erstellt.</p>
+        <a href="./wfh.html" class="btn btn-primary mt-3">Mehr erfahren</a>
+      </div>
+    </div>
+  </div> -->
+</div>
+</div>
+
+<!-- All projects -->
+<div class="description-end"></div>
+<div class="container">
+  <h3 class="mb-4">ALLE PROJEKTE</h3>
+  <div class="row">
+    <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 100%;">
+        <img src="../../projects/img/personalwebsite.jpg" class="card-img-top" alt="Personal website">
+        <div class="card-body">
+          <h5 class="card-title">Persönliche Website</h5>
+          <p class="card-text">Meine persönliche Website war mein erstes Projekt im Bereich Web-Development.</p>
+          <a href="./marcelthiemann.html" class="btn btn-primary mt-3">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 100%;">
+        <img src="../../projects/img/fitnrisju.jpg" class="card-img-top" alt="fit.n.risju website">
+        <div class="card-body">
+          <h5 class="card-title">fit.n.risju Lifestyle Website</h5>
+          <p class="card-text">Eine Website, die ich für meine Schwester mit React, Gatsby und Netlify erstellt habe.</p>
+          <a href="./fitnrisju.html" class="btn btn-primary mt-3">Mehr erfahren</a>
+        </div>
+      </div>
+    </div> -->
+    <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 100%;">
+        <img src="../../projects/img/uoft.jpg" class="card-img-top" alt="fit.n.risju website">
+        <div class="card-body">
+          <h5 class="card-title">University of Toronto Coding</h5>
+          <p class="card-text">Erfahren Sie mehr über die Projekte aus meinem Coding-Kurs an der Universität von Toronto.</p>
+          <a href="./uoft" class="btn btn-primary mt-3">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Line -->
 
@@ -77,31 +127,27 @@
 <hr>
 
 <!-- Footer -->
-
 <div class="footer">
-    <h3 class="footer-head">ONLINE-PROFILE</h3>
-    <div class="icon-row">
-      <div class="icon-column">
-        <a href="http://www.linkedin.com/in/marcelthiemann" target="_blank"><img src="../../icons/linkedin.png" alt="Connect on LinkedIn" style="width:80%"></a>
-      </div>
-      <div class="icon-column">
-        <a href="https://twitter.com/cestmarcel" target="_blank"><img src="../../icons/twitter.png" alt="Connect on Twitter" style="width:80%"></a>
-      </div>
-      <div class="icon-column">
-        <a href="https://github.com/cestmarcel" target="_blank"><img src="../../icons/github.png" alt="Visit my Github profile" style="width:80%"></a>
-      </div>
-      <div class="icon-column">
-        <a href="https://angel.co/u/marcel-thiemann" target="_blank"><img src="../../icons/angellist-dark.png" alt="Visit my Angellist profile" style="width:80%"></a>
-      </div>
-      <div class="icon-column">
-        <a href="https://stackoverflow.com/users/13382956/cestmarcel" target="_blank"><img src="../../icons/stackoverflow.png" alt="Visit my Stack Overflow profile" style="width:80%"></a>
-      </div>
-      </div>
+  <h3 class="footer-head">FINDEN SIE MICH ONLINE</h3>
+  <div class="icon-row">
+    <div class="icon-column">
+      <a href="http://www.linkedin.com/in/marcelthiemann" target="_blank"><img src="../../icons/linkedin.png" alt="Connect on LinkedIn" style="width:80%"></a>
     </div>
-    <p class="footer">Icons von <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> und <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel perfect</a> von www.flaticon.com</p>
-  </div>
-  
-  <script src="../../collapse.js"></script>
+    <div class="icon-column">
+      <a href="https://twitter.com/cestmarcel" target="_blank"><img src="../../icons/twitter.png" alt="Connect on Twitter" style="width:80%"></a>
+    </div>
+    <div class="icon-column">
+      <a href="https://github.com/cestmarcel" target="_blank"><img src="../../icons/github.png" alt="Visit my Github profile" style="width:80%"></a>
+    </div>
+    <div class="icon-column">
+      <a href="https://angel.co/u/marcel-thiemann" target="_blank"><img src="../../icons/angellist-dark.png" alt="Visit my Angellist profile" style="width:80%"></a>
+    </div>
+    <div class="icon-column">
+      <a href="https://stackoverflow.com/users/13382956/cestmarcel" target="_blank"><img src="../../icons/stackoverflow.png" alt="Visit my Stack Overflow profile" style="width:80%"></a>
+    </div>
+    </div>
+</div>
+<p class="footer">Icons von <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> und <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel perfect</a> von www.flaticon.com</p>
 
   </body>
   </html>

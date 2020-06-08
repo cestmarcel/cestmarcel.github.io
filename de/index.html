@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92914643-2"></script>
@@ -14,38 +14,46 @@
 <title>Marcel Thiemann</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../reset.css">
-<link rel="stylesheet" href="../cestmarcel.css">
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../reset.css">
+<link rel="stylesheet" href="../cestmarcel.css">
 </head>
 
 <body>
 
 <!-- Navigation -->
-
-<div class="navbar" id="myNavbar">
-  <div class="content">
-    <span class="name">MARCEL THIEMANN</span>
-    <a href="./" class="right"><img src="../icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-    <a href="../" class="right"><img src="../icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-    <a href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">LinkedIn</a>
-    <a href="#contact_area" class="right">Kontakt</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="./">MARCEL THIEMANN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="./projekte" class="right">Projekte</a>
+        <a class="nav-item nav-link" href="./index.html#contact_area" class="right">Kontakt</a>
+        <a class="nav-item nav-link" href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">LinkedIn</a>
+        <a class="nav-item nav-link" href="../" class="right"><img src="../icons/en.png" alt="EN" style="width:20px;height:20px;border:0;"></a>
+        <a class="nav-item nav-link" href="./" class="right"><img src="../icons/de.png" alt="EN" style="width:20px;height:20px;border:0;"></a>
+      </div>
+    </div>
   </div>
-</div>
+</nav>
 
 <!-- Header -->
-
 <div class="header">
-  <div class="content">
+  <div class="container">
     <h1>HI, ICH BIN MARCEL</h1>
     <p>Ich bin ein Spezialist für Software und digitale Produkte. Mein Fokus sind der Technologie- und Mobilitätsbereich.</p>
   </div>
 </div>
 
 <!-- Social links -->
-
 <div class="social-links">
   <div class="icon-row">
     <div class="icon-column">
@@ -63,201 +71,193 @@
     <div class="icon-column">
       <a href="https://stackoverflow.com/users/13382956/cestmarcel" target="_blank"><img src="../icons/stackoverflow.png" alt="Visit my Stack Overflow profile" style="width:80%"></a>
     </div>
-    </div>
   </div>
+</div>
+
 
 <!-- Detail overview -->
-
-<div class="content">
-<div class="section-head">
-    <h2>WAS MICH AUSMACHT</h2>
-    <div class="detail-row">
-      <div class="detail-column">
-        <div class="detail-image detail-img-3">
-          <h3>Technische<br>Skills</h3>
+<div class="container" id="detailNav">
+  <h2 class="mt-5 mb-3">LERNEN SIE MICH KENNEN</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="../detail/detail4.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">Technische Skills</h5>
+          <p class="card-text">Ich bin fasziniert von Technologie und was man mit ihr erreichen kann.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#technicalSkills" aria-expanded="false" aria-controls="technicalSkills">Mehr erfahren</a>
         </div>
-        <p>Ich bin fasziniert von Technologie und was man mit ihr erreichen kann.</p>
-        <button type="button" class="collapsible" id="detail3">Mehr erfahren</button>
       </div>
-    <div class="detail-column">
-      <div class="detail-image detail-img-2">
-        <h3>Branchen-<br>erfahrung</h3>
-      </div>
-      <p>Ich fokussiere mich auf Mobilität, Software und Technologie.</p>
-      <button type="button" class="collapsible" id="detail2">Mehr erfahren</button>
     </div>
-    <div class="detail-column">
-      <div class="detail-image detail-img-1">
-        <h3>Internationaler<br>Background</h3>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="../detail/detail2.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">Branchenerfahrung</h5>
+          <p class="card-text">Ich fokussiere mich auf Mobilität, Software und Technologie.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#industryKnowledge" aria-expanded="false" aria-controls="industryKnowledge">Mehr erfahren</a>
+        </div>
       </div>
-      <p>Ich habe verschiedene Länder und Kontinente mein Zuhause genannt.</p>
-      <button type="button" class="collapsible" id="detail1">Mehr erfahren</button>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="../detail/detail1.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">Internationaler Background</h5>
+          <p class="card-text">Ich habe verschiedene Länder und Kontinente mein Zuhause genannt.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#internationalExperience" aria-expanded="false" aria-controls="internationalExperience">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse" id="technicalSkills">
+    <div class="card card-body mb-5">
+      <h4>Technische Skills</h4>
+      <p>
+        Nachdem ich über Jahre mit Unternehmen im Technologiebereich gearbeitet habe, entwickle
+        ich meine Karriere aktuell in eine neue Richtung weiter und lerne selbst, <b>Software zu entwickeln</b>.
+        <br><br>
+        Ich arbeite aktuell an der Universität von Toronto an einem Zertifikat in Full Stack Coding. Ich verfüge über Skills in <b>HTML, CSS und JavaScript</b>. 
+        Außerdem arbeite ich mit <b>React und Gatsby</b>. Die Webseite, die Sie gerade ansehen, habe ich mit etwas Mentoring <b>komplett selbst erstellt</b>, 
+        was mich sehr stolz macht.
+        <br><br>
+        <b>Datenanalyse</b> ist seit meinem Studium mit Fokus auf quantitative Methoden einer meiner Interessensschwerpunkte.
+        Ich habe SPSS für Forschungsprojekte genutzt und bin ein fortgeschrittener Nutzer von Microsoft Excel.
+        Außerdem arbeite ich mit <b>SQL</b>.
+      </p>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse" id="industryKnowledge">
+    <div class="card card-body mb-5">
+      <h4>Branchenerfahrung</h4>
+      <p>Aufgewachsen in Stuttgart, der Wiege des Automobils, arbeite ich seit Beginn meiner professionellen
+        Laufbahn im <b>Automobil- und Technologiebereich</b>. Ich habe mit OEMs, Zulieferern und Softwareunternehmen
+        sowie mit Städten und Gemeinden zusammengearbeitet.
+        <br><br>
+        Außerdem bin ich auf <b>Enterprise Software</b> spezialisiert. So habe ich zum Beispiel mit SAP gearbeitet und einem
+        jungen Softwareunternehmen im Silicon Valley dabei geholfen, eine neue B2B-Marke und ein neues Softwareprodukt
+        im Markt zu platzieren. Dabei haben wir 2 Millionen USD an Venturekapital eingenommen.
+        <br><br>
+        Im größeren Technologiebereich habe ich mit <b>Unterhaltungselektronik und Telekommunikationsfirmen</b>
+        zusammengearbeitet.</p>
+        <h5 class="mt-4">MIT WEM ICH GEARBEITET HABE</h5>
+        <div class="logo-row content mini-logos">
+          <div class="logo-column">
+            <img src="../logos/sap.jpg" alt="SAP logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/bmw.jpg" alt="BMW logo" style="width:60%">
+          </div>
+          <div class="logo-column">
+          <img src="../logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/orange.jpg" alt="Orange logo" style="width:60%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/verizon.jpg" alt="Verizon logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="../logos/telekom.jpg" alt="Telekom logo" style="width:80%">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse mb-5" id="internationalExperience">
+    <div class="card card-body mb-5">
+      <h4>Internationaler Background</h4>
+      <p>
+        Von Stuttgart nach Berlin in <b>Deutschland</b>, dann nach San Francisco, <b>USA</b>, und nun Toronto, <b>Kanada</b>:
+        Vom kleinen Startup zum Fortune 500 Unternehmen habe ich Berufs- und Branchenerfahrung gesammelt,
+        und das über Kontinente hinweg.
+        <br><br>
+        Mein internationaler Background stattet mich mit den richtigen Skills für die globalisierte
+        Weltwirtschaft aus. Neben spannenden Insights in internationale Märkte schätze ich es, mit
+        Menschen unterschiedlicher kultureller Herkunft zusammenzuarbeiten.
+        <br><br>
+        Ich spreche <b>Deutsch und Englisch</b> fließend. Aktuell arbeite ich daran, mein <b>Französisch</b> auf
+        Business-Level zu bringen.
+      </p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-12">
+      <div class="jumbotron">
+        <h4>Meine Projekte</h4>
+        <p>Ich habe unterschiedliche Web-Applikationen entwickelt, sowohl im Team wie auch Solo. Erfahren Sie mehr über meine bisherigen Projekte!</p>
+        <a class="btn btn-primary btn-jumbotron mt-3" href="./projekte" role="button">Mehr erfahren</a>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
-<!-- Detail collapsibles -->
-
-<div class="collapcontent" id="detail3-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>Technische Skills</h4>
-    <p>Nachdem ich über Jahre mit Unternehmen im Technologiebereich gearbeitet habe, entwickle
-      ich meine Karriere aktuell in eine neue Richtung weiter und lerne selbst, <b>Software zu entwickeln</b>.
-      <br><br>
-      Ich arbeite aktuell an der Universität von Toronto an einem Zertifikat in Full Stack Coding. Ich verfüge über Skills in <b>HTML, CSS und JavaScript</b>. 
-      Außerdem arbeite ich mit <b>React und Gatsby</b>. Die Webseite, die Sie gerade ansehen, habe ich mit etwas Mentoring <b>komplett selbst erstellt</b>, 
-      was mich sehr stolz macht.
-      <br><br>
-      <b>Datenanalyse</b> ist seit meinem Studium mit Fokus auf quantitative Methoden einer meiner Interessensschwerpunkte.
-      Ich habe SPSS für Forschungsprojekte genutzt und bin ein fortgeschrittener Nutzer von Microsoft Excel.
-      Außerdem arbeite ich mit <b>SQL</b>.
-</p>
-  </div>
-</div>
-
-<div class="collapcontent" id="detail2-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>Branchenerfahrung</h4>
-    <p>Aufgewachsen in Stuttgart, der Wiege des Automobils, arbeite ich seit Beginn meiner professionellen
-      Laufbahn im <b>Automobil- und Technologiebereich</b>. Ich habe mit OEMs, Zulieferern und Softwareunternehmen
-      sowie mit Städten und Gemeinden zusammengearbeitet.
-      <br><br>
-      Außerdem bin ich auf <b>Enterprise Software</b> spezialisiert. So habe ich zum Beispiel mit SAP gearbeitet und einem
-      jungen Softwareunternehmen im Silicon Valley dabei geholfen, eine neue B2B-Marke und ein neues Softwareprodukt
-      im Markt zu platzieren. Dabei haben wir 2 Millionen USD an Venturekapital eingenommen.
-      <br><br>
-      Im größeren Technologiebereich habe ich mit <b>Unterhaltungselektronik und Telekommunikationsfirmen</b>
-      zusammengearbeitet.</p>
-      <p class="mini-head"><br>Mit wem ich gearbeitet habe</p>
-      <div class="logo-row content mini-logos">
-        <div class="logo-column">
-          <img src="../logos/sap.jpg" alt="SAP logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/bmw.jpg" alt="BMW logo" style="width:60%">
-        </div>
-        <div class="logo-column">
-        <img src="../logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/orange.jpg" alt="Orange logo" style="width:60%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/verizon.jpg" alt="Verizon logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="../logos/telekom.jpg" alt="Telekom logo" style="width:80%">
-        </div>
-      </div>
-  </div>
-</div>
-
-<div class="collapcontent" id="detail1-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>Internationaler Background</h4>
-    <p>Von Stuttgart nach Berlin in <b>Deutschland</b>, dann nach San Francisco, <b>USA</b>, und nun Toronto, <b>Kanada</b>:
-      Vom kleinen Startup zum Fortune 500 Unternehmen habe ich Berufs- und Branchenerfahrung gesammelt,
-      und das über Kontinente hinweg.
-      <br><br>
-      Mein internationaler Background stattet mich mit den richtigen Skills für die globalisierte
-      Weltwirtschaft aus. Neben spannenden Insights in internationale Märkte schätze ich es, mit
-      Menschen unterschiedlicher kultureller Herkunft zusammenzuarbeiten.
-      <br><br>
-      Ich spreche <b>Deutsch und Englisch</b> fließend. Aktuell arbeite ich daran, mein <b>Französisch</b> auf
-      Business-Level zu bringen.</p>
-  </div>
-</div>
-
-<!-- Projects CTA -->
-<!--
-<div class="detail-row content">
-  <div class="detail-image-projects detail-img-4">
-    <div>
-    <h3>Projekte</h3>
-    <p>Erfahren Sie mehr über Webseiten und Applikationen, an denen ich gearbeitet habe.</p>
-    </div>
-    <button type="button" id="detail4">Mehr erfahren</button>
-  </div>
-</div>
--->
 
 <!-- Logo Bar -->
-
-<div class="content">
-<div class="section-head">
-    <h2>MIT WEM ICH GEARBEITET HABE</h2>
-</div>
-</div>
-
-<div class="logo-row content">
-  <div class="logo-column">
-    <img src="../logos/sap.jpg" alt="SAP Logo" style="width:80%">
+<div class="container">
+  <div class="section-head">
+      <h2>MIT WEM ICH GEARBEITET HABE</h2>
   </div>
-  <div class="logo-column">
-    <img src="../logos/mercedes.jpg" alt="Mercedes-Benz Logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="../logos/bmw.jpg" alt="BMW Logo" style="width:60%">
-  </div>
-  <div class="logo-column">
-  <img src="../logos/goodyear.jpg" alt="Goodyear Logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="../logos/fleetboard.jpg" alt="Fleetboard Logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="../logos/orange.jpg" alt="Orange Logo" style="width:60%">
-  </div>
-  <div class="logo-column">
-    <img src="../logos/verizon.jpg" alt="Verizon Logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="../logos/telekom.jpg" alt="Telekom Logo" style="width:80%">
+  <div class="logo-row content">
+    <div class="logo-column">
+      <img src="../logos/sap.jpg" alt="SAP logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/bmw.jpg" alt="BMW logo" style="width:60%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/orange.jpg" alt="Orange logo" style="width:60%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/verizon.jpg" alt="Verizon logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="../logos/telekom.jpg" alt="Telekom logo" style="width:80%">
+    </div>
   </div>
 </div>
 
 <!-- Contact form -->
-
-<div class="content">
-<div class="section-head">
-  <a id="contact_area"><h2>KONTAKTIEREN SIE MICH</h2></a>
+<div class="container">
+  <div class="section-head">
+    <a id="contact_area"><h2>KONTAKTIEREN SIE MICH</h2></a>
   </div>
-  <p>Ich freue mich über Ihre Nachricht, wenn Sie sich für meine Arbeit interessieren.<br>
-    Ich melde mich so bald wie möglich!</p>
-  <form
-  action="https://formspree.io/mwknybqk"
-  method="POST"
-  target="_blank">
-  <label>
-    <span>Ihre Email</span>
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    <span>Ihre Nachricht</span>
-    <textarea name="message"></textarea>
-  </label>
-<button type="submit">Absenden</button>
-</form>
+  <p>
+    Ich freue mich über Ihre Nachricht, wenn Sie sich für meine Arbeit interessieren.<br>
+    Ich melde mich so bald wie möglich!
+  </p>
+  <form action="https://formspree.io/mwknybqk" method="POST" target="_blank">
+    <label>
+      <span>Ihre E-Mail</span>
+      <input type="text" name="_replyto">
+    </label>
+    <label>
+      <span>Ihre Nachricht</span>
+      <textarea name="message"></textarea>
+    </label>
+    <button type="submit">Senden</button>
+  </form>
 </div>
 
 <!-- Line -->
-
 <hr>
 
 <!-- Footer -->
-
 <div class="footer">
-  <h3 class="footer-head">ONLINE-PROFILE</h3>
+  <h3 class="footer-head">FINDEN SIE MICH ONLINE</h3>
   <div class="icon-row">
     <div class="icon-column">
       <a href="http://www.linkedin.com/in/marcelthiemann" target="_blank"><img src="../icons/linkedin.png" alt="Connect on LinkedIn" style="width:80%"></a>
@@ -275,11 +275,8 @@
       <a href="https://stackoverflow.com/users/13382956/cestmarcel" target="_blank"><img src="../icons/stackoverflow.png" alt="Visit my Stack Overflow profile" style="width:80%"></a>
     </div>
     </div>
-  </div>
-  <p class="footer">Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel perfect</a> from www.flaticon.com</p>
 </div>
-
-<script src="../collapse.js"></script>
+<p class="footer">Icons von <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a> und <a href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel perfect</a> von www.flaticon.com</p>
 
 </body>
 </html>

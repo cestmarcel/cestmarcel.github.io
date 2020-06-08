@@ -14,32 +14,40 @@
 <title>Marcel Thiemann</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="cestmarcel.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="cestmarcel.css">
 </head>
 
 <body>
 
 <!-- Navigation -->
-
-<div class="navbar" id="myNavbar">
-  <div class="content">
-    <div class="header-name"><a href="./"><span class="name">MARCEL THIEMANN</span></a></div>
-    <a href="./de/" class="language"><img src="icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-    <a href="./" class="language"><img src="icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-    <a href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">Connect on LinkedIn</a>
-    <a href="#contact_area" class="right">Contact me</a>
-    <!--<a href="./projects/" class="right">Projects</a>-->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="./">MARCEL THIEMANN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="./projects" class="right">Projects</a>
+        <a class="nav-item nav-link" href="./index.html#contact_area" class="right">Contact me</a>
+        <a class="nav-item nav-link" href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">Connect on LinkedIn</a>
+        <a class="nav-item nav-link" href="./" class="right"><img src="./icons/en.png" alt="EN" style="width:20px;height:20px;border:0;"></a>
+        <a class="nav-item nav-link" href="./de/" class="right"><img src="./icons/de.png" alt="DE" style="width:20px;height:20px;border:0;"></a>
+      </div>
+    </div>
   </div>
-</div>
+</nav>
 
 <!-- Header -->
-
 <div class="header">
-  <div class="content">
+  <div class="container">
     <h1>HI, I'M MARCEL</h1>
     <p>I am a technology professional and developer with a unique combination of tech, business, and industry knowledge. I'm focused on the
       automotive and software spaces.</p>
@@ -47,7 +55,6 @@
 </div>
 
 <!-- Social links -->
-
 <div class="social-links">
   <div class="icon-row">
     <div class="icon-column">
@@ -65,192 +72,183 @@
     <div class="icon-column">
       <a href="https://stackoverflow.com/users/13382956/cestmarcel" target="_blank"><img src="icons/stackoverflow.png" alt="Visit my Stack Overflow profile" style="width:80%"></a>
     </div>
-    </div>
   </div>
+</div>
 
 
 <!-- Detail overview -->
-
-<div class="content">
-<div class="section-head">
-    <h2>GET TO KNOW ME</h2>
-    <div class="detail-row">
-      <div class="detail-column">
-        <div class="detail-image detail-img-3">
-          <h3>Technical<br>skills</h3>
+<div class="container" id="detailNav">
+  <h2 class="mt-5 mb-3">GET TO KNOW ME</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="./detail/detail4.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">Technical skills</h5>
+          <p class="card-text">I'm curious about technology and what you can do with it.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#technicalSkills" aria-expanded="false" aria-controls="technicalSkills">Learn more</a>
         </div>
-        <p>I'm curious about technology and what you can do with it.</p>
-        <button type="button" class="collapsible" id="detail3">Learn more</button>
       </div>
-    <div class="detail-column">
-      <div class="detail-image detail-img-2">
-        <h3>Industry<br>knowledge</h3>
-      </div>
-      <p>I am passionate about the automotive and technology spaces.</p>
-      <button type="button" class="collapsible" id="detail2">Learn more</button>
     </div>
-    <div class="detail-column">
-      <div class="detail-image detail-img-1">
-        <h3>International<br>background</h3>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="./detail/detail2.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">Industry knowledge</h5>
+          <p class="card-text">I am passionate about the automotive and technology spaces.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#industryKnowledge" aria-expanded="false" aria-controls="industryKnowledge">Learn more</a>
+        </div>
       </div>
-      <p>I have lived and worked across several countries and continents.</p>
-      <button type="button" class="collapsible" id="detail1">Learn more</button>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="./detail/detail1.jpg" class="card-img-top" alt="Technical skills">
+        <div class="card-body">
+          <h5 class="card-title">International background</h5>
+          <p class="card-text">I have lived and worked across several countries and continents.</p>
+          <a href="#" class="btn btn-primary mt-3" data-toggle="collapse" data-target="#internationalExperience" aria-expanded="false" aria-controls="internationalExperience">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse" id="technicalSkills">
+    <div class="card card-body mb-5">
+      <h4>Technical skills</h4>
+      <p>
+        After working with technology companies and for technology brands for almost a decade, I am excited to
+        take my technical skills to the next level and get a certificate in <b>software engineering</b>.<br><br>I am currently pursuing a certification in
+        Full Stack Coding at the University of Toronto. I have skills in <b>HMTL, CSS, and JavaScript</b>. I'm also exploring <b>React and Gatsby</b>. 
+        For example, with some mentoring, I built this website entirely myself, which I am very proud of. Check out my 
+        <a href="https://github.com/cestmarcel">Github</a> for more details.<br><br><b>Data analytics</b> has been a major interest
+        of mine ever since focusing on quantitative research in university. I have used <b>SPSS</b> for research projects
+        extensively. For work purposes, I am an advanced user of <b>Microsoft Excel</b> and have solid knowledge of <b>the SQL query
+          language</b>.
+      </p>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse" id="industryKnowledge">
+    <div class="card card-body mb-5">
+      <h4>Industry knowledge</h4>
+      <p>Born and raised in Stuttgart, Germany, the birthplace of the automobile, I have been involved in the
+        <b>automotive industry</b> ever since starting out my professional career. I have worked with OEMs, automotive
+        suppliers, vehicle software companies, as well as cities and municipalities.<br><br>In addition to that, I have
+        become involved with <b>enterprise software</b>. Aside from working with brands like SAP, I have recently helped
+        a young enterprise software company in Silicon Valley build a new B2B brand and software product. We raised
+        $2M of seed funding in the process.<br><br>The <b>greater technology industry</b> complements my professional focus areas:
+        I have worked with consumer electronics companies, but also with telecommunications companies on initiatives
+        around 5G and IoT applications.</p>
+        <h5 class="mt-4">BRANDS I'VE WORKED WITH</h5>
+        <div class="logo-row content mini-logos">
+          <div class="logo-column">
+            <img src="logos/sap.jpg" alt="SAP logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/bmw.jpg" alt="BMW logo" style="width:60%">
+          </div>
+          <div class="logo-column">
+          <img src="logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/orange.jpg" alt="Orange logo" style="width:60%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/verizon.jpg" alt="Verizon logo" style="width:80%">
+          </div>
+          <div class="logo-column">
+            <img src="logos/telekom.jpg" alt="Telekom logo" style="width:80%">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div data-parent="#detailNav" class="collapse mb-5" id="internationalExperience">
+    <div class="card card-body mb-5">
+      <h4>International background</h4>
+      <p>
+        I have lived in various cities in <b>Germany</b>, San Francisco, <b>United States</b>, and now Toronto,
+        <b>Canada</b>.<br><br>From small startups to Fortune 500 companies, I have worked for companies in Europe,
+        North America, and Asia. My international background empowers me with <b>unique insights</b> into
+        different markets and a great understanding of our globalized economy. I’m very passionate
+        about working with people from <b>different cultural backgrounds</b>!<br><br>I am fluent in <b>English and German</b>.
+        Currently, I am working on making my <b>French</b> business fluent.
+      </p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-12">
+      <div class="jumbotron">
+        <h4>My projects</h4>
+        <p>I've developed multiple web applications, individually and in a team. Learn more about my past and current projects.</p>
+        <a class="btn btn-primary btn-jumbotron mt-3" href="./projects" role="button">Learn more</a>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
-<!-- Detail collapsibles -->
-
-<div class="collapcontent" id="detail3-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>Technical skills</h4>
-    <p>After working with technology companies and for technology brands for almost a decade, I am excited to
-      take my technical skills to the next level and get a certificate in <b>software engineering</b>.<br><br>I am currently pursuing a certification in
-      Full Stack Coding at the University of Toronto. I have skills in <b>HMTL, CSS, and JavaScript</b>. I'm also exploring <b>React and Gatsby</b>. 
-      For example, with some mentoring, I built this website entirely myself, which I am very proud of. Check out my 
-      <a href="https://github.com/cestmarcel">Github</a> for more details.<br><br><b>Data analytics</b> has been a major interest
-      of mine ever since focusing on quantitative research in university. I have used <b>SPSS</b> for research projects
-      extensively. For work purposes, I am an advanced user of <b>Microsoft Excel</b> and have solid knowledge of <b>the SQL query
-        language</b>.</p>
-  </div>
-</div>
-
-<div class="collapcontent" id="detail2-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>Industry knowledge</h4>
-    <p>Born and raised in Stuttgart, Germany, the birthplace of the automobile, I have been involved in the
-      <b>automotive industry</b> ever since starting out my professional career. I have worked with OEMs, automotive
-      suppliers, vehicle software companies, as well as cities and municipalities.<br><br>In addition to that, I have
-      become involved with <b>enterprise software</b>. Aside from working with brands like SAP, I have recently helped
-      a young enterprise software company in Silicon Valley build a new B2B brand and software product. We raised
-      $2M of seed funding in the process.<br><br>The <b>greater technology industry</b> complements my professional focus areas:
-      I have worked with consumer electronics companies, but also with telecommunications companies on initiatives
-      around 5G and IoT applications.</p>
-      <p class="mini-head"><br>Brands I've worked with</p>
-      <div class="logo-row content mini-logos">
-        <div class="logo-column">
-          <img src="logos/sap.jpg" alt="SAP logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/bmw.jpg" alt="BMW logo" style="width:60%">
-        </div>
-        <div class="logo-column">
-        <img src="logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/orange.jpg" alt="Orange logo" style="width:60%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/verizon.jpg" alt="Verizon logo" style="width:80%">
-        </div>
-        <div class="logo-column">
-          <img src="logos/telekom.jpg" alt="Telekom logo" style="width:80%">
-        </div>
-      </div>
-  </div>
-</div>
-
-<div class="collapcontent" id="detail1-content">
-  <div class="content">
-    <p class="x">X</p>
-    <h4>International background</h4>
-    <p>I have lived in various cities in <b>Germany</b>, San Francisco, <b>United States</b>, and now Toronto,
-      <b>Canada</b>.<br><br>From small startups to Fortune 500 companies, I have worked for companies in Europe,
-      North America, and Asia. My international background empowers me with <b>unique insights</b> into
-      different markets and a great understanding of our globalized economy. I’m very passionate
-      about working with people from <b>different cultural backgrounds</b>!<br><br>I am fluent in <b>English and German</b>.
-      Currently, I am working on making my <b>French</b> business fluent.</p>
-  </div>
-</div>
-
-
-<!-- Projects CTA -->
-<!--
-<div class="detail-row content">
-  <div class="detail-image-projects detail-img-4">
-    <div>
-    <h3>Projects</h3>
-    <p>Check out some software projects I've worked on.</p>
-    </div>
-    <button type="button" id="detail4">Learn more</button>
-  </div>
-</div>
--->
 
 <!-- Logo Bar -->
-
-<div class="content">
-<div class="section-head">
-    <h2>BRANDS I'VE WORKED WITH</h2>
-</div>
-</div>
-
-<div class="logo-row content">
-  <div class="logo-column">
-    <img src="logos/sap.jpg" alt="SAP logo" style="width:80%">
+<div class="container">
+  <div class="section-head">
+      <h2>BRANDS I'VE WORKED WITH</h2>
   </div>
-  <div class="logo-column">
-    <img src="logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="logos/bmw.jpg" alt="BMW logo" style="width:60%">
-  </div>
-  <div class="logo-column">
-  <img src="logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="logos/orange.jpg" alt="Orange logo" style="width:60%">
-  </div>
-  <div class="logo-column">
-    <img src="logos/verizon.jpg" alt="Verizon logo" style="width:80%">
-  </div>
-  <div class="logo-column">
-    <img src="logos/telekom.jpg" alt="Telekom logo" style="width:80%">
+  <div class="logo-row content">
+    <div class="logo-column">
+      <img src="logos/sap.jpg" alt="SAP logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/mercedes.jpg" alt="Mercedes-Benz logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/bmw.jpg" alt="BMW logo" style="width:60%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/goodyear.jpg" alt="Goodyear logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/fleetboard.jpg" alt="Fleetboard logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/orange.jpg" alt="Orange logo" style="width:60%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/verizon.jpg" alt="Verizon logo" style="width:80%">
+    </div>
+    <div class="logo-column">
+      <img src="logos/telekom.jpg" alt="Telekom logo" style="width:80%">
+    </div>
   </div>
 </div>
 
 <!-- Contact form -->
-
-<div class="content">
-<div class="section-head">
-  <a id="contact_area"><h2>CONTACT ME</h2></a>
+<div class="container">
+  <div class="section-head">
+    <a id="contact_area"><h2>CONTACT ME</h2></a>
   </div>
-  <p>Please leave a message below if you'd like to get in touch with me.<br>
-    I'm excited to connect with you!</p>
-  <form
-  action="https://formspree.io/mwknybqk"
-  method="POST"
-  target="_blank">
-  <label>
-    <span>Your email</span>
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    <span>Your message</span>
-    <textarea name="message"></textarea>
-  </label>
-<button type="submit">Send</button>
-</form>
+  <p>
+    Please leave a message below if you'd like to get in touch with me.<br>
+      I'm excited to connect with you!
+  </p>
+  <form action="https://formspree.io/mwknybqk" method="POST" target="_blank">
+    <label>
+      <span>Your email</span>
+      <input type="text" name="_replyto">
+    </label>
+    <label>
+      <span>Your message</span>
+      <textarea name="message"></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
 </div>
 
 <!-- Line -->
-
 <hr>
 
 <!-- Footer -->
-
 <div class="footer">
   <h3 class="footer-head">FIND ME ONLINE</h3>
   <div class="icon-row">

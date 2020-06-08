@@ -14,92 +14,116 @@
 <title>Marcel Thiemann</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../reset.css">
 <link rel="stylesheet" href="../cestmarcel.css">
 <link rel="stylesheet" href="projects.css">
-<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body> 
 
-<!-- Navigation -->
-
-<div class="navbar" id="myNavbar">
-    <div class="content">
-      <div class="header-name"><a href="../"><span class="name">MARCEL THIEMANN</span></a></div>
-      <a href="../de/projekte" class="right"><img src="../icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-      <a href="./" class="right"><img src="../icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
-      <a href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">Connect on LinkedIn</a>
-      <a href="../index.html#contact_area" class="right">Contact me</a>
-      <a href="./" class="right">Projects</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="../">MARCEL THIEMANN</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../projects/" class="right">Projects</a>
+          <a class="nav-item nav-link" href="../index.html#contact_area" class="right">Contact me</a>
+          <a class="nav-item nav-link" href="http://www.linkedin.com/in/marcelthiemann" class="right" target="_blank">Connect on LinkedIn</a>
+          <a class="nav-item nav-link" href="../projects/" class="right"><img src="../icons/en.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
+          <a class="nav-item nav-link" href="../de/projekte" class="right"><img src="../icons/de.png" alt="HTML tutorial" style="width:20px;height:20px;border:0;"></a>
+        </div>
+      </div>
     </div>
-  </div>
-
+  </nav>
 
 <!-- Header -->
-
   <div class="projects-header">
-    <div class="content medium-stage">
+    <div class="container">
       <h1>MY PROJECTS</h1>
       <p>Explore some of the projects that I've built so far. If you have any questions, please reach out!</p>
     </div>
   </div>
 
-
-<!-- Project selector -->
-
-<div class="description-end"></div>
-<div class="content project-selector">
-        <div class="detail-row">
-            <a class="detail-column" href="./marcelthiemann.html">
-            <div class="detail-image project-img-1">
-              <h3>Personal<br>website</h3>
-            </div>
-        </a>
-        <a class="detail-column" href="./fitnrisju.html">
-          <div class="detail-image project-img-2">
-            <h3>fit.n.risju<br>website & CMS</h3>
-          </div>
-        </a>
-        <a class="detail-column">
-          <div class="project-coming-soon">
-            <h3>More coming<br>soon!</h3>
-          </div>
-        </a>
+<!-- Featured projects -->
+<div class="container">
+  <h2 class="mb-4">FEATURED PROJECTS</h2>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 100%;">
+        <img src="./img/ecoroute.jpg" class="card-img-top" alt="Personal website">
+        <div class="card-body">
+          <h5 class="card-title">EcoRoute</h5>
+          <p class="card-text">A route calculator that gives users insights on the CO<sub>2</sub> impact of their individual travel choices.</p>
+          <a href="./ecoroute.html" class="btn btn-primary mt-3">Learn more</a>
+        </div>
       </div>
+    </div>
+    <!-- <div class="col-sm-6">
+      <div class="card" style="width: 100%;">
+        <img src="./img/wfh.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Work from home toolkit</h5>
+          <p class="card-text">Leveraging the knowledge of my network, I created a guideline for people new to working from home.</p>
+          <a href="./wfh.html" class="btn btn-primary mt-3">Learn more</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
 
-<!-- Second project row
-
-    <div class="detail-row">
-      <a class="detail-column" href="./">
-      <div class="detail-image project-img-4">
-          <h3>Personal<br>website</h3>
+<!-- All projects -->
+<div class="description-end"></div>
+  <div class="container">
+    <h3 class="mb-4">ALL PROJECTS</h3>
+    <div class="row">
+      <div class="col-sm-4 mb-3">
+        <div class="card" style="width: 100%;">
+          <img src="./img/personalwebsite.jpg" class="card-img-top" alt="Personal website">
+          <div class="card-body">
+            <h5 class="card-title">Personal website</h5>
+            <p class="card-text">My personal website was the first project I worked on. Check it out!</p>
+            <a href="./marcelthiemann.html" class="btn btn-primary mt-3">Learn more</a>
+          </div>
         </div>
-      </a>
-      <a class="detail-column" href="./">
-      <div class="detail-image project-img-5">
-        <h3>fit.n.risju<br>website & CMS</h3>
+      </div>
+      <!-- <div class="col-sm-4 mb-3">
+        <div class="card" style="width: 100%;">
+          <img src="./img/fitnrisju.jpg" class="card-img-top" alt="fit.n.risju website">
+          <div class="card-body">
+            <h5 class="card-title">fit.n.risju lifestyle blog</h5>
+            <p class="card-text">A website I built for my sister using React, Gatsby, and Netlify.</p>
+            <a href="./fitnrisju.html" class="btn btn-primary mt-3">Learn more</a>
+          </div>
         </div>
-      </a>
-      <a class="detail-column">
-      <div class="placeholder">
+      </div> -->
+      <div class="col-sm-4 mb-3">
+        <div class="card" style="width: 100%;">
+          <img src="./img/uoft.jpg" class="card-img-top" alt="fit.n.risju website">
+          <div class="card-body">
+            <h5 class="card-title">University of Toronto Coding</h5>
+            <p class="card-text">Learn more about the projects I built in my Coding Class at U of T.</p>
+            <a href="./uoft" class="btn btn-primary mt-3">Learn more</a>
+          </div>
         </div>
-      </a>
+      </div>
+    </div>
   </div>
 
--->
-
-    </div>
-
 <!-- Line -->
-
 <div class="description-end"></div>
 <hr>
 
 <!-- Footer -->
-
 <div class="footer">
     <h3 class="footer-head">FIND ME ONLINE</h3>
     <div class="icon-row">
