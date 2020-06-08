@@ -117,6 +117,19 @@ sub {
     border-color: #FF784F;
 }
 
+a.project-button-2 {
+    margin: 40px 10px 0 0;
+    background-color: #2C4251;
+    border-color: #2C4251;
+}
+
+a.project-button-2:hover {
+    background-color: #FF784F;
+    border-color: #FF784F;
+    color: white;
+    text-decoration: none;
+}
+
 .orange-line {
     background-color: #FF784F;
     height: 3px;
