@@ -222,6 +222,10 @@ a.language {
   padding: 2rem;
 }
 
+.jumbotron-cv {
+  background-image: url(./detail/cv.jpg);
+}
+
 /* Detail box styles
 .detail-head h2 {
   padding: 20px 0;
