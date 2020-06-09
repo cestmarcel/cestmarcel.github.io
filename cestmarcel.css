@@ -510,6 +510,12 @@ button:hover, button.active {
   }
 }
 
+@media screen and (max-width: 820) {
+  .not-on-mobile {
+    display: none;
+  }
+}
+
 /*
 @media screen and (max-width: 850px) {
 .navbar a:not(:first-child) {
@@ -534,7 +540,20 @@ text-align: left;
 }
 */
 
+.mobile {
+  display: none;
+}
+
+.close:hover {
+  background-color: white;
+  border: none;
+}
+
 @media screen and (max-width: 600px) {
+  .not-on-mobile {
+    display: none;
+  }
+
   .medium-stage {
     padding: 0 50px;
   }
@@ -618,4 +637,13 @@ text-align: left;
   .projects-header p {
     font-size: 15px;
 }
+}
+
+@media screen and (max-width: 575px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
