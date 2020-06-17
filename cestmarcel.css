@@ -357,6 +357,10 @@ a.language {
   text-decoration: none;
 }
 
+.flags {
+  width: 50%;
+}
+
 /* Form styles */
 form {
   margin: 10px 0 50px 0;
