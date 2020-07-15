@@ -7,6 +7,8 @@
 ## Description
 
 This is the source code for my personal website. It was created using HTML/CSS, Bootstrap, and JavaScript.
+The website is accessible under: www.marcelthiemann.com
+
 ![Screenshot of the start screen](https://github.com/cestmarcel/cestmarcel.github.io/blob/master/screenshots/landing.png)
 
 ## Table of contents
