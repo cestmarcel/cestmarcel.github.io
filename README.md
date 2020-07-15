@@ -19,12 +19,11 @@ The website is accessible under: www.marcelthiemann.com
 
 ## Usage
 
-The application is intended to serve as my digital portfolio. It has the following features:
+The application is intended to serve as my digital portfolio. The page is available in both English and German. It has the following features:
 - Personal introduction
 - Project overview
 - Overview of brands I have worked with
 - Contact form
-The page is available in both English and German.
 
 ## License
 
